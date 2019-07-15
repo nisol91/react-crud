@@ -28,11 +28,14 @@ class App extends Component {
             </div>
           </nav> <br />
           <h2>Welcome to React CRUD Tutorial</h2> <br />
-          <Switch>
-            <Route exact path='/create' component={Create} />
-            <Route path='/edit/:id' component={Edit} />
-            <Route path='/index' component={Index} />
-          </Switch>
+          <div className="main">
+            <Switch>
+              <Route exact path='/create' component={Create} />
+              <Route path='/edit/:id' component={Edit} />
+              <Route path='/index' component={Index} />
+            </Switch>
+          </div>
+          <div className="footer">footer</div>
         </div>
       </Router>
     );
