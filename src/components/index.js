@@ -65,6 +65,9 @@ export default class Index extends Component {
 									{object.business_gst_number}
 								</td>
 								<td>
+									<Link to={"/singleelement/" + object._id} className="btn btn-primary">View</Link>
+								</td>
+								<td>
 									<Link to={"/edit/" + object._id} className="btn btn-primary">Edit</Link>
 								</td>
 								<td>
